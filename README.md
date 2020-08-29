@@ -16,15 +16,15 @@ See `demo.ipynb`.
 >
 >-```random_state```
 >> *int (optional, default: None)*  
->> Specify this if you want reproducible output.
+>> Specify integer if you want reproducible output.
 >
 >- ```logging```
 >> *bool (optional, default: False)*  
->> Specify this True if you want to see the progress of instance fitting.
+>> Specify True if you want to see the progress of instance fitting.
 >
 >- ```loop_limit```
 >> *positive int (optional, default: numpy.inf)*  
->> Specify this True if you want the optimization loop to end in the middle.
+>> Specify positive integer if you want the optimization loop to end in the middle.
 
 #### methods
 
