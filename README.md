@@ -38,7 +38,7 @@ See `demo.ipynb`.
 >> Return new dataset `X_selected` with the selected features.
 >
 >- ```reconstruct(X_selected)```
->> Return the reconstructed dataset `X_reconstructed` from the tranceformed dataset `X_selected`.
+>> Return the reconstructed dataset `X_reconstructed` from the transformed dataset `X_selected`.
 
 #### attributes
 
