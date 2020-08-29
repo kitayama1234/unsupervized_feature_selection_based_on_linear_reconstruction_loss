@@ -8,37 +8,48 @@ Unofficial implementation of the **unsupervised feature selection** algorithm pr
 ## Usage of FeatureSelector
 See `demo.ipynb`.
 
-### parameters
+#### parameters
 
-#### ```n_features```
-- *int*
-- Number of features to be selected.
+>- ```n_features```
+>> *int*  
+>> Number of features to be selected.
+>
+>-```random_state```
+>> *int (optional, default: None)*  
+>> Specify this if you want reproducible output.
+>
+>- ```logging```
+>> *bool (optional, default: False)*  
+>> Specify this True if you want to see the progress of instance fitting.
+>
+>- ```loop_limit```
+>> *positive int (optional, default: numpy.inf)*  
+>> Specify this True if you want the optimization loop to end in the middle.
 
-#### ```random_state```
-- *int (optional, default: None)*
-- Specify this if you want reproducible output.
+#### methods
 
-#### ```logging```
-- *bool (optional, default: False)*
-- Specify this True if you want to see the progress of instance fitting.
+>- ```fit(X)```
+>> Fit the `FeatureSelector` instance with your numpy.ndarray dataset `X`.
+>
+>- ```fit_transform(X)```
+>> Fit the `FeatureSelector` instance with your numpy.ndarray dataset `X`, and return new dataset `X_selected` with the selected features.
+>
+>- ```transform(X)```
+>> Return new dataset `X_selected` with the selected features.
+>
+>- ```reconstruct(X_selected)```
+>> Return the reconstructed dataset `X_reconstructed` from the tranceformed dataset `X_selected`.
 
-#### ```loop_limit```
-- *positive int (optional, default: numpy.inf)*
-- Specify this True if you want the optimization loop to end in the middle.
+#### attributes
 
-### methods
-
-#### ```fit(X)```
-- Fit the `FeatureSelector` instance with your numpy.ndarray dataset `X`.
-
-#### ```fit_transform(X)```
-- Fit the `FeatureSelector` instance with your numpy.ndarray dataset `X`, and return new dataset `X_selected` with the selected features.
-
-#### ```transform(X)```
-- Return new dataset `X_selected` with the selected features.
-
-#### ```reconstruct(X_selected)```
-- Return the reconstructed dataset `X_reconstructed` from the tranceformed dataset `X_selected`.
+>- ```selected```
+>> The list of selected feature indices
+>
+>- ```deselected```
+>> The list of deselected feature indices
+>
+>- ```original_dim``` 
+>> The original dimension of the input vectors
 
 
 ## Algorithm
