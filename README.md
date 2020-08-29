@@ -14,7 +14,7 @@ See `demo.ipynb`.
 >> *int*  
 >> Number of features to be selected.
 >
->-```random_state```
+>- ```random_state```
 >> *int (optional, default: None)*  
 >> Specify integer if you want reproducible output.
 >
