@@ -5,10 +5,41 @@ Unofficial implementation of the **unsupervised feature selection** algorithm pr
 1. Just add the `fs_ono2020.py` to your directory.
 2. Import `fs_ono2020.FeatureSelector` class.
 
-## Usage of `fs_ono2020.FeatureSelector`
-
-### Tutorial
+## Usage of FeatureSelector
 See `demo.ipynb`.
+
+### parameters
+
+#### ```n_features```
+- *int*
+- Number of features to be selected.
+
+#### ```random_state```
+- *int (optional, default: None)*
+- Specify this if you want reproducible output.
+
+#### ```logging```
+- *bool (optional, default: False)*
+- Specify this True if you want to see the progress of instance fitting.
+
+#### ```loop_limit```
+- *positive int (optional, default: numpy.inf)*
+- Specify this True if you want the optimization loop to end in the middle.
+
+### methods
+
+#### ```fit(X)```
+- Fit the `FeatureSelector` instance with your numpy.ndarray dataset `X`.
+
+#### ```fit_transform(X)```
+- Fit the `FeatureSelector` instance with your numpy.ndarray dataset `X`, and return new dataset `X_selected` with the selected features.
+
+#### ```transform(X)```
+- Return new dataset `X_selected` with the selected features.
+
+#### ```reconstruct(X_selected)```
+- Return the reconstructed dataset `X_reconstructed` from the tranceformed dataset `X_selected`.
+
 
 ## Algorithm
 From the abstruct in the paper:
