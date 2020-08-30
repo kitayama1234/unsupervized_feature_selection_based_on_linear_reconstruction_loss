@@ -53,8 +53,8 @@ See `demo.ipynb`.
 
 
 ## Algorithm
-From the abstruct in the paper:
-> In this study, we consider an objective function defined as the reconstruction loss of a linear autoencoder, and this is formulated as a discrete optimization problem that selects the element that minimizes it. Also, we propose a method to solve this problem by sequentially replacing elements chosen so that the objective function becomes smaller.
+In the abstruct of the paper:
+> "In this study, we consider an objective function defined as the reconstruction loss of a linear autoencoder, and this is formulated as a discrete optimization problem that selects the element that minimizes it. Also, we propose a method to solve this problem by sequentially replacing elements chosen so that the objective function becomes smaller."
 
 ## Reference
 [1] Nobutaka Ono, "機械学習における乗算を用いない次元削減(Dimension reduction without multiplication in machine learning),"
