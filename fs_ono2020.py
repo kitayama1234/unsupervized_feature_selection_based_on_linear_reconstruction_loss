@@ -75,7 +75,7 @@ class FeatureSelector:
 
                 obj_diff[:] = 0.
                 for idx_deselected in range(self.original_dim - self.n_features):
-                    # In this loop, all idx_deselected and swap operations for the current idx_selected is evaluated.
+                    # In this loop, all idx_deselected and swap operations for the current idx_selected are evaluated.
                     # Calculate the differences of the objective function in the cases where the features are swapped.
                     obj_diff[idx_deselected] = obj_func.get_obj_diff(idx_selected, idx_deselected)
 
